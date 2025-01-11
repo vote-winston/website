@@ -417,6 +417,7 @@ figcaption {
   text-align: center;
   letter-spacing: -.01em;
   text-transform: uppercase;
+  flex: 1;
   align-self: auto;
   margin-top: 0;
   margin-bottom: 0;
@@ -432,6 +433,10 @@ figcaption {
   text-overflow: ellipsis;
   flex: 0 auto;
   overflow: hidden;
+}
+
+.heading.medium.ca-text {
+  flex: 0 auto;
 }
 
 .heading.extra-small {
@@ -987,7 +992,7 @@ figcaption {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  max-width: 52rem;
+  max-width: 54rem;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -1262,6 +1267,7 @@ figcaption {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 2rem;
   height: 2rem;
   display: flex;
   position: absolute;
@@ -1276,6 +1282,7 @@ figcaption {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 2rem;
   height: 2rem;
   display: flex;
   position: absolute;
@@ -1290,6 +1297,7 @@ figcaption {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 2rem;
   height: 2rem;
   display: flex;
   position: absolute;
@@ -1304,6 +1312,7 @@ figcaption {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 2rem;
   height: 2rem;
   display: flex;
   position: absolute;
@@ -1559,13 +1568,7 @@ figcaption {
   line-height: 1.4;
 }
 
-.paragraph-copy.large {
-  font-size: 1.25rem;
-  line-height: 1.45;
-}
-
-.paragraph-copy.large-copy {
-  padding-left: 0;
+.paragraph-copy.large, .paragraph-copy.large-copy {
   font-size: 1.25rem;
   line-height: 1.45;
 }
@@ -1732,7 +1735,7 @@ figcaption {
   }
 
   .heading.large {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 
   .button-tertiary {
@@ -1834,7 +1837,7 @@ figcaption {
   }
 
   .card-item {
-    padding: 2.5rem;
+    padding: 2.5rem 1.75rem;
   }
 
   .footer-column {
@@ -2303,7 +2306,9 @@ figcaption {
   }
 
   .card-list {
+    flex-flow: column;
     grid-template-columns: 1fr;
+    display: flex;
   }
 
   .card-item {
